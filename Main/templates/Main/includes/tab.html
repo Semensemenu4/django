@@ -1,0 +1,128 @@
+<div class="tabs">
+
+  <input id="tab1" type="radio" name="tab" checked="checked"/>
+  <label for="tab1" title="Національний банк">Національний банк</label>
+  <input id="tab2" type="radio" name="tab" />
+  <label for="tab2" title="Приват Банк">Приват Банк</label>
+  <input id="tab3" type="radio" name="tab" />
+  <label for="tab3" title="Укрсиббанк">Укрсиббанк</label>
+  <input id="tab4" type="radio" name="tab" />
+  <label for="tab4" title="Райффайзен Банк">Райффайзен Банк</label>
+  <input id="tab5" type="radio" name="tab" />
+  <label for="tab5" title="Криптовалюта">Криптовалюта</label>
+
+
+<!-- НАЦИОНАЛЬНЫЙ БАНК-->
+    <section id="content-tab1">
+      <table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+        <tr><th>Валюта</th><th>Офіційний курс (купiвля)</th><th>Офіційний курс (продаж)</th></tr><!-- Table Header -->
+        <tr><td>Долар США</td><td>{{ USD_nac }}</td><td>-</td></tr><!-- Table Row -->
+        <tr class='even'><td>Євро</td><td>{{ EUR_nac }}</td><td>-</td></tr><!-- Darker Table Row -->
+        <tr><td>Російський рубль</td><td>{{ RUB_nac }}</td><td>-</td></tr>
+        <tr><th>Офіційні курси банківських металів</th><th>10 тройських унцій (311.03 грам)</th><th>1 грам</th></tr><!-- Darker Table Row -->
+
+        <tr><td>Золото</td><td>{{ XAU_nac }}</td><td>{{ XAU_nac_1 }}</td></tr>
+        <tr class='even'><td>Срiбло</td><td>{{ XAG_nac }}</td><td>{{ XAG_nac_1 }}</td></tr><!-- Darker Table Row -->
+        <tr><td>Платина</td><td>{{ XPT_nac }}</td><td>{{ XPT_nac_1 }}</td></tr>
+      </table>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p id="tab"><b>Примітка:</b> між 16:00 та 18:00 оновлення інформації на стороні Національного Банку України.</p>
+            <p id="tab"><b>Офіційний сайт </b><a href= "https://bank.gov.ua/control/uk/index" target="_blank">Національного Банку України.</a></p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+<!-- ПРИВАТ БАНК-->
+    <section id="content-tab2">
+      <table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+        <tr><th>Валюта</th><th>Офіційний курс (купiвля)</th><th>Офіційний курс (продаж)</th></tr><!-- Table Header -->
+        <tr><td>Долар США</td><td>{{ USD_pb_buy }}</td><td>{{ USD_pb_sale }}</td></tr><!-- Table Row -->
+        <tr class='even'><td>Євро</td><td>{{ EUR_pb_buy }}</td><td>{{ EUR_pb_sale }}</td></tr><!-- Darker Table Row -->
+        <tr><td>Російський рубль</td><td>{{ RUR_pb_buy }}</td><td>{{ RUR_pb_sale }}</td></tr>
+      </table>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p><b>Офіційний сайт </b><a href="https://privatbank.ua/" target="_blank">Приват Банку.</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- UKRSIBBANK-->
+    <section id="content-tab3">
+
+      <table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+        <tr><th>Валюта</th><th>Офіційний курс (купiвля)</th><th>Офіційний курс (продаж)</th></tr><!-- Table Header -->
+        <tr><td>Долар США</td><td>{{ USD_sib_buy }}</td><td>{{ USD_sib_sale }}</td></tr><!-- Table Row -->
+        <tr class='even'><td>Євро</td><td>{{ EUR_sib_buy }}</td><td>{{ EUR_sib_sale }}</td></tr><!-- Darker Table Row -->
+        <tr><td>Російський рубль</td><td>{{ RUB_sib_buy }}</td><td>{{ RUB_sib_sale }}</td></tr>
+      </table>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p><b>Офіційний сайт </b><a href="https://my.ukrsibbank.com/ua/personal/" target="_blank">UKRSIBBANK.</a></p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+<!-- Райффайзен Банк -->
+    <section id="content-tab4">
+
+      <table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+        <tr><th>Валюта</th><th>Офіційний курс (купiвля)</th><th>Офіційний курс (продаж)</th></tr><!-- Table Header -->
+        <tr><td>Долар США</td><td>{{ USD_aval_buy }}</td><td>{{ USD_aval_sale }}</td></tr><!-- Table Row -->
+        <tr class='even'><td>Євро</td><td>{{ EUR_aval_buy }}</td><td>{{ EUR_aval_sale }}</td></tr><!-- Darker Table Row -->
+        <tr><td>Російський рубль</td><td>{{ RUB_aval_buy }}</td><td>{{ RUB_aval_sale }}</td></tr>
+      </table>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p><b>Офіційний сайт </b><a href="https://www.aval.ua/ru/" target="_blank">Райффайзен Банк Аваль.</a></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+<!-- КРИПТОВАЛЮТА-->
+    <section id="content-tab5">
+
+      <table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+        <tr><th>Валюта</th><th>Курс до Долара США</th><th>Курс до Гривні</th></tr><!-- Table Header -->
+        <tr><td>Bitcoin</td><td>{{ Bitcoin }}</td><td>{{ Bitcoin_g }}</td></tr><!-- Table Row -->
+        <tr class='even'><td>XRP</td><td>{{ XRP }}</td><td>{{ XRP_g }}</td></tr><!-- Darker Table Row -->
+        <tr><td>Ethereum</td><td>{{ ETHUSDT }}</td><td>{{ ETHUSDT_g }}</td></tr><!-- Table Row -->
+        <tr class='even'><td>Bitcoin Cash</td><td>{{ BitcoinCash }}</td><td>{{ BitcoinCash_g }}</td></tr><!-- Darker Table Row -->
+        <tr><td>EOS</td><td>{{ EOSUSDT }}</td><td>{{ EOSUSDT_g }}</td></tr><!-- Table Row -->
+        <tr><td>Stellar</td><td>{{ XLMUSDT }}</td><td>{{ XLMUSDT_g }}</td></tr><!-- Table Row -->
+        <tr class='even'><td>Litecoin</td><td>{{ LTCUSDT }}</td><td>{{ LTCUSDT_g }}</td></tr><!-- Darker Table Row -->
+        <tr><td>Bitcoin SV</td><td>{{ BCHSVUSDT }}</td><td>{{ BCHSVUSDT_g }}</td></tr><!-- Table Row -->
+        <tr class='even'><td>TRON</td><td>{{ TRXUSDT }}</td><td>{{ TRXUSDT_g }}</td></tr><!-- Darker Table Row -->
+        <tr><td>IOTA</td><td>{{ IOTAUSDT }}</td><td>{{ IOTAUSDT_g }}</td></tr><!-- Table Row -->
+      </table>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p id="tab">Інформація надана однією з найпопулярніших бірж - <b>Binance.</b> Перші десять валют у світовому рейтингу.</p>
+            <p><b>Офіційниа сторінка </b><a href="https://www.binance.com" target="_blank">Binance.</a></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+</div>

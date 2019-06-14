@@ -1,0 +1,15 @@
+{% extends 'Main/Base_index.html' %}
+
+{% block title %}
+	Курс валют на дату
+{% endblock %}
+
+
+{% block content %}
+
+
+	<h1>Курс "Національного Банку України" на {{ date_coin_get }} - {{ USD_date }} грн.</h1>
+
+	{% include 'Date/includes/form_coin.html' %}
+
+{% endblock %}
